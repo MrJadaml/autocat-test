@@ -7,6 +7,7 @@ const categories = [
   'insurance',
 ]
 
+import { writeFileSync } from 'fs'
 import { HfInference } from '@huggingface/inference'
 import dotenv from 'dotenv'
 import { transactions } from './transactions'
@@ -21,25 +22,52 @@ if (!apiKey) {
 
 const hf = new HfInference(apiKey)
 
-;(async () => {
-  async function classifyTransaction(description: string) {
-    try {
-      const response = await hf.zeroShotClassification({
-        model: 'typeform/distilbert-base-uncased-mnli',
-        inputs: description,
-        parameters: {
-          candidate_labels: categories,
-        },
-      })
+  ; (async () => {
+    async function classifyTransaction(description: string) {
+      try {
+        const response = await hf.zeroShotClassification({
+          model: 'typeform/distilbert-base-uncased-mnli',
+          inputs: description,
+          parameters: {
+            candidate_labels: categories,
+          },
+        })
 
-      console.log(response)
+        console.log('Response:', response)
+        const highestScoreIndex = response[0].scores.indexOf(
+          Math.max(...response[0].scores),
+        )
+        const categorySuggested = response[0].labels[highestScoreIndex]
 
-      return response
-    } catch (error) {
-      console.error('Error during text classification:', error)
-      return null
+        return categorySuggested
+      } catch (error) {
+        console.error('Error during text classification:', error)
+        return 'UNCLASSIFIED'
+      }
     }
-  }
 
-  await classifyTransaction(transactions[0].description)
-})()
+    async function processTransactions() {
+      const processedTransactions = []
+
+      for (const transaction of transactions) {
+        const categorySuggested = await classifyTransaction(
+          transaction.description,
+        )
+        processedTransactions.push({
+          ...transaction,
+          categorySuggested,
+        })
+      }
+
+      writeFileSync(
+        'processed-transactions.json',
+        JSON.stringify(processedTransactions, null, 2),
+      )
+
+      console.log(
+        'Processed transactions have been saved to processed-transactions.json',
+      )
+    }
+
+    processTransactions()
+  })()

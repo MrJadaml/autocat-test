@@ -1,0 +1,182 @@
+[
+  {
+    "description": "Employee salary - March",
+    "amount": -5000,
+    "category": "payroll",
+    "categorySuggested": "payroll"
+  },
+  {
+    "description": "Printer ink cartridges",
+    "amount": -100,
+    "category": "office supplies",
+    "categorySuggested": "income"
+  },
+  {
+    "description": "Online course subscription",
+    "amount": -50,
+    "category": "professional development",
+    "categorySuggested": "income"
+  },
+  {
+    "description": "Sales revenue - Product A",
+    "amount": 1500,
+    "category": "income",
+    "categorySuggested": "income"
+  },
+  {
+    "description": "Bank service charges",
+    "amount": -20,
+    "category": "financial expenses",
+    "categorySuggested": "financial expenses"
+  },
+  {
+    "description": "General liability insurance premium",
+    "amount": -200,
+    "category": "insurance",
+    "categorySuggested": "insurance"
+  },
+  {
+    "description": "Employee salary - April",
+    "amount": -5200,
+    "category": "payroll",
+    "categorySuggested": "payroll"
+  },
+  {
+    "description": "Printer paper ream",
+    "amount": -20,
+    "category": "office supplies",
+    "categorySuggested": "income"
+  },
+  {
+    "description": "Conference registration fee",
+    "amount": -300,
+    "category": "professional development",
+    "categorySuggested": "financial expenses"
+  },
+  {
+    "description": "Consulting fee from client",
+    "amount": 2000,
+    "category": "income",
+    "categorySuggested": "income"
+  },
+  {
+    "description": "Bank overdraft fee",
+    "amount": -50,
+    "category": "financial expenses",
+    "categorySuggested": "financial expenses"
+  },
+  {
+    "description": "Property insurance premium",
+    "amount": -300,
+    "category": "insurance",
+    "categorySuggested": "insurance"
+  },
+  {
+    "description": "Employee bonus - Q1",
+    "amount": -1000,
+    "category": "payroll",
+    "categorySuggested": "payroll"
+  },
+  {
+    "description": "Printer maintenance service",
+    "amount": -150,
+    "category": "office supplies",
+    "categorySuggested": "income"
+  },
+  {
+    "description": "Books on leadership development",
+    "amount": -80,
+    "category": "professional development",
+    "categorySuggested": "professional development"
+  },
+  {
+    "description": "Subscription revenue - Monthly plan",
+    "amount": 500,
+    "category": "income",
+    "categorySuggested": "income"
+  },
+  {
+    "description": "Transaction fee for wire transfer",
+    "amount": -30,
+    "category": "financial expenses",
+    "categorySuggested": "financial expenses"
+  },
+  {
+    "description": "Health insurance premium",
+    "amount": -250,
+    "category": "insurance",
+    "categorySuggested": "insurance"
+  },
+  {
+    "description": "Employee salary - May",
+    "amount": -5500,
+    "category": "payroll",
+    "categorySuggested": "payroll"
+  },
+  {
+    "description": "Printer toner cartridge",
+    "amount": -80,
+    "category": "office supplies",
+    "categorySuggested": "income"
+  },
+  {
+    "description": "Workshop registration fee",
+    "amount": -200,
+    "category": "professional development",
+    "categorySuggested": "financial expenses"
+  },
+  {
+    "description": "Consulting fee from client",
+    "amount": 2500,
+    "category": "income",
+    "categorySuggested": "income"
+  },
+  {
+    "description": "ATM withdrawal fee",
+    "amount": -3,
+    "category": "financial expenses",
+    "categorySuggested": "financial expenses"
+  },
+  {
+    "description": "Business liability insurance premium",
+    "amount": -400,
+    "category": "insurance",
+    "categorySuggested": "insurance"
+  },
+  {
+    "description": "Employee salary - June",
+    "amount": -5800,
+    "category": "payroll",
+    "categorySuggested": "payroll"
+  },
+  {
+    "description": "Desk organizer",
+    "amount": -30,
+    "category": "office supplies",
+    "categorySuggested": "professional development"
+  },
+  {
+    "description": "Online course enrollment fee",
+    "amount": -120,
+    "category": "professional development",
+    "categorySuggested": "financial expenses"
+  },
+  {
+    "description": "Product sales revenue - Online store",
+    "amount": 1800,
+    "category": "income",
+    "categorySuggested": "income"
+  },
+  {
+    "description": "Wire transfer processing fee",
+    "amount": -50,
+    "category": "financial expenses",
+    "categorySuggested": "financial expenses"
+  },
+  {
+    "description": "Vehicle insurance premium",
+    "amount": -350,
+    "category": "insurance",
+    "categorySuggested": "financial expenses"
+  }
+]
