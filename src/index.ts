@@ -1,16 +1,8 @@
-const categories = [
-  'payroll',
-  'office supplies',
-  'professional development',
-  'income',
-  'financial expenses',
-  'insurance',
-]
-
 import { writeFileSync } from 'fs'
 import { HfInference } from '@huggingface/inference'
 import dotenv from 'dotenv'
 import { transactions } from './transactions'
+import { categories } from './categories'
 
 dotenv.config()
 

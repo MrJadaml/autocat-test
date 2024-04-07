@@ -6,7 +6,9 @@
   "scripts": {
     "lint": "eslint src --ext .ts",
     "lint:fix": "eslint src --ext .ts --fix",
-    "format": "prettier --write \"src/**/*.ts\""
+    "format": "prettier --write \"src/**/*.ts\"",
+    "perf": "ts-node src/perf-test.ts",
+    "exec": "ts-node src/index.ts"
   },
   "devDependencies": {
     "@types/node": "^20.12.5",
