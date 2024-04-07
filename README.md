@@ -34,6 +34,7 @@ highlighting areas where the model excels or needs improvement.
 
 ## 📈 Results
 
+```bash
 CATEGORY: payroll
 🎯 Precision: 100%
 💭 Recall: 100%
@@ -75,6 +76,7 @@ CATEGORY: UNCLASSIFIED
 🎯 Average Precision: 51%
 💭 Average Recall: 57%
 🏎️ Average F1 Score: 51%
+```
 
 ## 📦 Installation
 
